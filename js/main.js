@@ -1,6 +1,9 @@
 import posts from './data.js';
+import renderPosts from './renderPosts.js';
 
 // console.log(posts);
+// console.log(renderPosts);
+renderPosts(posts);
 
 // console.log(posts['author Name']);
 // console.log(posts['author LastName']);

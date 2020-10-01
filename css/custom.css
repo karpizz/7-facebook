@@ -25,4 +25,5 @@ aside {
 
 main {
     grid-area: main;
+    margin-bottom: 50px;
 }

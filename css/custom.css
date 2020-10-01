@@ -6,12 +6,12 @@ body {
         "menu main msg";
 }
 
-header {
+body > header {
     grid-area: hed;
     background-color: aqua;
 }
 
-aside {
+body > aside {
     background-color: rgb(236, 236, 236);
 }
 
@@ -23,6 +23,7 @@ aside {
     grid-area: msg;
 }
 
-main {
+body > main {
     grid-area: main;
+    margin-bottom: 50px;
 }

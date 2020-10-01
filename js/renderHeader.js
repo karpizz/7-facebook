@@ -6,7 +6,7 @@ function renderHeader(data, time) {
             <div class="timeStamp">6h ago (${time}) </div>
             </div>
         <i class="fa fa-ellipsis-h"></i>
-    </header>`
+    </header>` ;
 }
 
 export default renderHeader;

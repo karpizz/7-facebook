@@ -13,10 +13,10 @@ function renderContent(data){
         textHTML = renderContentText(data.text);
     }
 
-    return `<p>
+    return `<div class="content">
         ${textHTML}
         ${photosHTML}
-    </p>`;
+    </div>`;
 }
 
 export default renderContent;

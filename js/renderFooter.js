@@ -1,8 +1,7 @@
 function renderFooter(){
-    return `
-    <header>
-    
-    </header>
+    return `<footer>
+        FOOTER FOOTER FOOTER FOOTER
+    </footer>
     `
 }
 

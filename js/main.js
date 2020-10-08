@@ -1,21 +1,33 @@
-import posts from './data.js';
+import ajax from './ajax.js';
 import renderPosts from './renderPosts.js';
 
-// console.log(posts);
-// console.log(renderPosts);
-renderPosts(posts);
+ajax(renderPosts);
 
-// console.log(posts['author Name']);
-// console.log(posts['author LastName']);
-// console.log(posts['author Avatar']);
-// console.log(posts['author URI']);
-// console.log(posts['content Image'][1]);
-// console.log(posts['content Image'][0]);
+// function msgClick(){
+//     console.log('Hey');
+// }
 
-// console.log(posts.author.Name);
-// console.log(posts.author.LastName);
-// console.log(posts.author.Avatar);
-// console.log(posts.author.URI);
-// console.log(posts.content.Image[1]);
-// console.log(posts.content.Image[0]);
-// console.log(posts.timeStamp);
+
+// const msgClick = () => {
+//     console.log('Hey');
+// }
+
+// const msgClick = () => console.log('Hey');
+
+
+// const msg = document.querySelector('.messenger');
+
+// msg.addEventListener('Click', msgClick);
+
+
+
+// const sum = (a, b) => a + b;
+
+// const kvad = x => x * x * 2;
+
+// console.log(kvad(5));
+
+
+
+
+

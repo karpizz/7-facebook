@@ -5,7 +5,7 @@ Teksto apimtys:
 - daug: 301-10000
 */
 
-function renderContentText(text){
+function renderContentText(text, background){
     //validacija
     if (!text){
         console.error('ERROR: NERA TEKSTO!');
@@ -13,15 +13,16 @@ function renderContentText(text){
     }
 
     if (text.length < 61){
-        return `<p class="big-size">${text} </p>`;
+        return `<p class="big-size ${background ? 'background ' + background : ''}">${text} </p>`;
     } else if (text.length < 301){
         return `<p>${text} </p>`;
     } else {
-        let shortText = '';
+        let shortedText = '';
         for (let i = 0; i < 300 ; i++){
-            shortText += text[i];
+            shortedText += text[i];
         }
-        return `<p>${shortText}... <span class="more">See more</span></p>`;
+        return `<p>${shortedText}... <span class="more">See more</span></p>
+                <p class="hidden">${text} <span class="less">See less</span></p>`;
     }
 }
 export default renderContentText;

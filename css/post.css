@@ -3,31 +3,63 @@
     border: 1px solid blueviolet;
 }
 
-.post > .post-header {
+.post>.post-header {
     display: grid;
     grid-template-columns: 50px 1fr 30px;
     gap: 15px;
     padding: 10px;
 }
 
-.post > .post-header > .avatar {
-        width: 100%;
+.post>.post-header>.avatar {
+    width: 100%;
 }
-.post > .content > p {
+
+.post>.content>p {
     padding: 10px;
 }
 
-.post > .content > p.big-size {
+.post>.content>p.big-size {
     font-size: 32px;
     line-height: 32px;
 }
 
-.post > .content > p > .more {
+.post >.content > p.background {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.post> .content> p.red {
+    background-color: red;
+}
+
+.post> .content> p.orange {
+    background-color: sandybrown;
+}
+
+.post>.content>p.hidden {
+    display: none;
+}
+
+.post>.content.show>p {
+    display: none;
+}
+
+.post>.content.show>p.hidden {
+    display: inline-block;
+}
+
+.post>.content>p>.more, .less {
     color: cornflowerblue;
     cursor: pointer;
 }
 
-.post > .content > p > .more:hover {
+.post>.content>p>.more:hover, .less:hover {
     text-decoration: underline;
 }
 
@@ -35,10 +67,9 @@
     display: inline-block;
     width: 100%;
     height: 300px;
-    
 }
 
-.post .gallery .img{
+.post .gallery .img {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -48,7 +79,7 @@
     position: relative;
 }
 
-.post .gallery .img img{
+.post .gallery .img img {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -60,7 +91,7 @@
     height: 360px;
 }
 
-.post .gallery.gallery-2 .img{
+.post .gallery.gallery-2 .img {
     width: 50%;
 }
 
@@ -68,7 +99,7 @@
     height: 400px;
 }
 
-.post .gallery.gallery-3 .img{
+.post .gallery.gallery-3 .img {
     width: 50%;
     height: 50%;
 }
@@ -80,10 +111,9 @@
 
 .post .gallery.gallery-4 {
     height: 440px;
-    
 }
 
-.post .gallery.gallery-4 .img{
+.post .gallery.gallery-4 .img {
     width: 50%;
     height: calc(100% / 3);
 }
@@ -109,6 +139,6 @@
     font-size: 40px;
 }
 
-.post > footer {
+.post>footer {
     padding: 10px;
 }
